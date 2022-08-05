@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import OpenAIAPI from "react-openai-api";
 
 export default function OpenAI() {
-  let apiKey = "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";
+  let apiKey = process.env.REACT_APP_OPENAI_KEY;
   let [moodText, setMoodText] = useState("a sky at dusk");
   let [canvasstyle, setCanvasstyle] = useState();
   let [colour, seColour] = useState();
